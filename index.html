@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <!-- meta data, css and title -->
+    <title>Number multiplier JS</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
   </head>
   <body>
-    <p>Paragraph</p>
+    <!-- script to link to my js file -->
+    <script src="/js/script.js"></script>
+     <!-- Instructional and title text -->
+    <h1>Number multiplier</h1>
+    <br>
+    <p>Please enter 2 whole, positive numbers to multiply:</p>
+    <!-- table with all of the main elements aside from the header-->
+    <center>
+      <table>
+        <tr>
+          <th>
+            <!-- Image in table -->
+            <img src="images/multiplyFav.png" style="width: 250px;"> 
+          </th>
+          <td>
+            <!-- Where min and max numbers are entered -->
+            <p>Enter your first number:</p> <br>
+            <input id="1" placeholder="number" type="number" step="1">
+            <br>
+            <p>Enter your second number:</p> <br>
+            <input id="2" placeholder="number" type="number" step="1">
+            <br>
+            <br>
+             <!-- Submit button -->
+            <button onclick="Submit()" id="Submit">Submit</button>
+            <br>
+             <!-- Where result is displayed -->
+            <div id="Result"></div>
+          </td>
+        </tr>
+      </table>
+    </center>
   </body>
 </html>
