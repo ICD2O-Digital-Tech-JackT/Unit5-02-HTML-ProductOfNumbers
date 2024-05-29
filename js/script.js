@@ -6,9 +6,9 @@ function Submit(){
   // Checking if user entered numbers
   if (num1&&num2){
     //Checking if numbers are whole and positive
-    if(num1%1==0&&num2%1==0&&num1>0&&num2>0){
+    if(Number(num1)%1==0&&Number(num2)%1==0&&Number(num1)>0&&Number(num2)>0){
       for (let i=0; i<num2; i++){
-        result+=num1;
+        result+=Number(num1);
       }
        document.getElementById('Result').innerHTML = num1+"x"+num2+"="+result
     } else{
